@@ -1,8 +1,6 @@
-<div align='center'><a [routerLink]= "'/Dashboard'">DashBoard</a>
-  | <a [routerLink]= "'/Games'">Games</a>
+<div align='center'>
   | <a [routerLink]= "'/MoneyExchange'">Money Exchange</a>
-  | <a [routerLink]= "'/Referral'">Referral</a>
-  | <a [routerLink]= "'/LuckyCard'">Lucky Card</a>
+  | 
   
 </div>
 
@@ -15,10 +13,33 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" [routerLink]= "'/Dashboard'">Dashboard</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Games
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Game1</a>
+            <a class="dropdown-item" href="#">Game2</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Game3</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Money Exchange
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" [routerLink]="'/Deposit'">Deposit</a>
+            <a class="dropdown-item" [routerLink]="'/Withdrawal'">Withdrawal</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" [routerLink]="'/TransactionHistory'">Transaction History</a>
+          </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" [routerLink]= "'/LuckyCard'">Lucky Card</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
