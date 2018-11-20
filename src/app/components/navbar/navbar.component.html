@@ -1,8 +1,4 @@
-<div align='center'>
-  | <a [routerLink]= "'/MoneyExchange'">Money Exchange</a>
-  | 
-  
-</div>
+
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Navbar</a>
@@ -21,7 +17,7 @@
             Games
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Game1</a>
+            <a class="dropdown-item" [routerLink]="'/snakeGame'">Snake Game</a>
             <a class="dropdown-item" href="#">Game2</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Game3</a>
