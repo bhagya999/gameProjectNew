@@ -23,6 +23,7 @@ import { RefferalDisplayComponent } from './components/refferal-display/refferal
 import { NotificationsComponent } from './components/notifications/notifications.component';
 import { WithdrawalHistoryComponent } from './components/withdrawal-history/withdrawal-history.component';
 import { AccountTransactionsComponent } from './components/account-transactions/account-transactions.component';
+import { SnakeGameComponent } from './components/snake-game/snake-game.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { AccountTransactionsComponent } from './components/account-transactions/
     RefferalDisplayComponent,
     NotificationsComponent,
     WithdrawalHistoryComponent,
-    AccountTransactionsComponent
+    AccountTransactionsComponent,
+    SnakeGameComponent
   ],
   imports: [
     BrowserModule,
