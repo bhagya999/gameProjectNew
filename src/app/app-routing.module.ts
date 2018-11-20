@@ -10,6 +10,7 @@ import { TransactionHistoryComponent } from './components/transaction-history/tr
 import { SettingsComponent } from './components/settings/settings.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { ReferralComponent } from './components/referral/referral.component';
+import { SnakeGameComponent } from './components/snake-game/snake-game.component';
 
 const routes: Routes = [
 
@@ -23,6 +24,10 @@ const routes: Routes = [
   {
     path: 'Deposit',
     component:DepositComponent
+  },
+  {
+    path: 'snakeGame',
+    component:SnakeGameComponent
   },
   {
     path: 'Withdrawal',
