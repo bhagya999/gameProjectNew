@@ -160,7 +160,7 @@ function draw(){
 	// 	ctx.strokeRect(14*box, 0.6*box, 32*3, 32);
 
 }
-function playGame(){
+
 if("ontouchstart" in document.documentElement){
 
 	document.addEventListener('touchstart', handleTouchStart, false);        
@@ -252,4 +252,4 @@ function reset(event){
 }
 
 game = setInterval(draw,150);
-}
+
